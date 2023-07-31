@@ -21,6 +21,6 @@ jobs:
       run: |
        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag fawazmv/letsplay-user-service:image1
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/locus-email-service:image1
     - name: Docker Push 
       run: docker push ${{secrets.DOCKER_USER}}/locus-email-service:image1
