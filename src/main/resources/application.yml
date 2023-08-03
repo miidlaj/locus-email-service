@@ -1,0 +1,30 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: EMAIL-SERVICE
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: email-group
+  mail:
+    host: smtp.gmail.com
+    username: locushaunt@gmail.com
+    password: rraedwtbinxpzpsz
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+# Service Registry Properties
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://43.204.232.113:8761/eureka/
+  instance:
+    hostname: 43.204.232.113
