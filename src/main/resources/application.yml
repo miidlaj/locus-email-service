@@ -1,5 +1,5 @@
 server:
-  port: 9003
+  port: 9004
 spring:
   application:
     name: EMAIL-SERVICE
@@ -20,11 +20,11 @@ spring:
             enable: true
 
 # Service Registry Properties
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://43.204.232.113:8761/eureka/
-  instance:
-    hostname: 43.204.232.113
+# eureka:
+#   client:
+#     register-with-eureka: true
+#     fetch-registry: true
+#     service-url:
+#       defaultZone: http://43.204.232.113:8761/eureka/
+#   instance:
+#     hostname: 43.204.232.113
