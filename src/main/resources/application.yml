@@ -19,12 +19,12 @@ spring:
           starttls:
             enable: true
 
-# Service Registry Properties
+# #Service Registry Properties
 # eureka:
 #   client:
 #     register-with-eureka: true
 #     fetch-registry: true
 #     service-url:
-#       defaultZone: http://43.204.232.113:8761/eureka/
+#       defaultZone: http://15.206.125.179:8761/eureka/
 #   instance:
-#     hostname: 43.204.232.113
+#     hostname: 15.206.125.179
